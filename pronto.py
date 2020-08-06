@@ -12,8 +12,8 @@ page_soup = soup(page_html, "html.parser")
 containers = page_soup.findAll("li",{"class":"item tp-default"}) 
 
 #cria o sheet com os títulos
-out_filename = "ps4.csv"
-headers = "PS4,Preço \n"
+out_filename = "produtos.csv"
+headers = "Nome,Preço \n"
 f = open(out_filename, "w")
 f.write(headers)
 
